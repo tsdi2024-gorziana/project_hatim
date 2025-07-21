@@ -1,0 +1,48 @@
+{% load static %}
+<div class="left-side-bar">
+		<div class="brand-logo">
+			<a href="{% url 'dach_formater' %}">
+				<img src="{% static 'vendors/images/deskapp-logo.svg' %}" alt="" class="dark-logo">
+				<img src="{% static 'vendors/images/deskapp-logo-white.svg' %}" alt="" class="light-logo">
+			</a>
+			<div class="close-sidebar" data-toggle="left-sidebar-close">
+				<i class="ion-close-round"></i>
+			</div>
+		</div>
+		<div class="menu-block customscroll">
+			<div class="sidebar-menu">
+            {% if  user.role == 'formateur' %}
+            	<ul id="accordion-menu">
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-list3"></span><span class="mtext">Filers</span>
+						</a>
+						<ul class="submenu">
+							{% for affectation in affectations %}
+								<li class="dropdown">
+                                    <a href="javascript:;" class="dropdown-toggle">
+                                        <span class="micon fa fa-plug"></span><span class="mtext">{{ affectation.filiere }}</span>
+                                    </a>
+                                    <ul class="submenu child">
+                                        {% for module in affectation.modules.all %}
+                                        		<li><a href="{% url 'fiche_desqreptive' affectation.id module.id %}">{{ module.titer_module }}</a></li>
+
+
+                                        {% endfor %}
+
+
+                                    </ul>
+                                </li>
+							{% endfor %}
+
+
+
+						</ul>
+					</li>
+
+				</ul>
+            {% endif %} 
+
+			</div>
+		</div>
+	</div>

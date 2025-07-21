@@ -1,0 +1,142 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block title %}
+    Formater Dashboard
+{% endblock %}
+
+{% block content %}
+    <div class="main-container">
+
+        <div class="pd-ltr-20">
+            <!--messages-->
+            {% if messages %}
+                {% for message in messages %}
+                     <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                        <strong>{{ message }}</strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <!-- Section Bienvenue -->
+            <div class="card-box pd-20 height-100-p mb-30">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <img src="{% static 'vendors/images/banner-img.png' %}" alt="Banner">
+                    </div>
+                    <div class="col-md-8">
+                        <h4 class="font-20 weight-500 mb-10 text-capitalize">
+                            Welcome back
+                            <div class="weight-600 font-30 text-blue">{{ user.full_name }}</div>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cartes Statistiques -->
+            <div class="row">
+                <div class="col-xl-3 mb-30">
+                    <div class="card-box height-100-p widget-style1">
+                        <div class="d-flex flex-wrap align-items-center">
+                            <div class="widget-data">
+                                <div class="h4 mb-0">{{ affectations.count }}</div>
+                                <div class="weight-600 font-14">Filers à étudier</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 mb-30">
+                    <div class="card-box height-100-p widget-style1">
+                        <div class="d-flex flex-wrap align-items-center">
+                            <div class="widget-data">
+                                <div class="h4 mb-0">{{ files.count }}</div>
+                                <div class="weight-600 font-14">Fichiers générés</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tableau des Fichiers -->
+           <div class="card-box mb-30">
+                <div class="pd-20">
+                    <h4 class="text-blue h4">Data Table Simple</h4>
+                </div>
+                <div class="pb-20">
+                    <!-- إضافة id للجدول -->
+                    <table id="filesDataTable" class="table stripe hover nowrap">
+                        <thead>
+                            <tr>
+
+                                <th>filer</th>
+                                <th>module</th>
+                                <th>type de controle</th>
+                                <th>date de creation </th>
+                                <th class="table-plus datatable-nosort">dawnloade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for file in files %}
+                            	<tr>
+
+                                    <td>{{ file.filer.title }}</td>
+                                    <td>{{ file.module.titer_module }}</td>
+                                    <td>{{ file.type }}</td>
+                                    <td>{{ file.date }}</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                                <i class="dw dw-more"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                                <a class="dropdown-item" href="{% url 'dawnloade_file'  file.id  %}"><i class="dw dw-download"></i> dawnloade</a>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+
+
+                        </tbody>
+                    </table>
+                </div>
+           </div>
+        </div>
+        {% include "components/footer.html" %}
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+$(document).ready(function() {
+    // التحقق من عدم تهيئة الجدول مسبقاً
+    if ($.fn.DataTable.isDataTable('#filesDataTable')) {
+        $('#filesDataTable').DataTable().destroy();
+    }
+
+    // تهيئة DataTable مع إعدادات مخصصة
+    $('#filesDataTable').DataTable({
+        scrollCollapse: true,
+        autoWidth: false,
+        responsive: true,
+        columnDefs: [{
+            targets: "datatable-nosort",
+            orderable: false,
+        }],
+        lengthMenu: [[10, 25, 50, -1], [10, 25, 50, "All"]],
+        language: {
+            info: "_START_-_END_ of _TOTAL_ entries",
+            searchPlaceholder: "Search",
+            paginate: {
+                next: '<i class="ion-chevron-right"></i>',
+                previous: '<i class="ion-chevron-left"></i>'
+            }
+        }
+    });
+});
+</script>
+{% endblock %}

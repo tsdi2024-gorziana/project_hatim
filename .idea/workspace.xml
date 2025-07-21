@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31442826-a6e7-42af-8f24-818141bb2a43" name="Changes" comment="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2zp5poeGZDOPN0FttzdPkjYfGly" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.project_hatim.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/abdelali/PycharmProjects/project_hatim/static/vendors/scripts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abdelali\PycharmProjects\project_hatim\static\vendors\scripts" />
+      <recent name="C:\Users\abdelali\PycharmProjects\project_hatim\templates_docs" />
+      <recent name="C:\Users\abdelali\PycharmProjects\project_hatim\static" />
+      <recent name="C:\Users\abdelali\PycharmProjects\project_hatim\media\users" />
+      <recent name="C:\Users\abdelali\PycharmProjects\project_hatim\prosses" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\abdelali\PycharmProjects\project_hatim\templates\components" />
+      <recent name="C:\Users\abdelali\PycharmProjects\project_hatim\templates" />
+      <recent name="C:\Users\abdelali\PycharmProjects\project_hatim\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="project_hatim" type="Python.DjangoServer" factoryName="Django server">
+      <module name="project_hatim" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="project_hatim.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PY-251.26094.141" />
+        <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31442826-a6e7-42af-8f24-818141bb2a43" name="Changes" comment="" />
+      <created>1752415359958</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752415359958</updated>
+      <workItem from="1752415361037" duration="978000" />
+      <workItem from="1752418492374" duration="22486000" />
+      <workItem from="1752519779996" duration="1128000" />
+      <workItem from="1752683330592" duration="10799000" />
+      <workItem from="1752698814433" duration="820000" />
+      <workItem from="1752701229837" duration="3435000" />
+      <workItem from="1752769035309" duration="454000" />
+      <workItem from="1752855182691" duration="22371000" />
+      <workItem from="1753020772741" duration="15714000" />
+      <workItem from="1753120019192" duration="7193000" />
+    </task>
+    <task id="LOCAL-00001" summary="step1">
+      <option name="closed" value="true" />
+      <created>1752426537041</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752426537041</updated>
+    </task>
+    <task id="LOCAL-00002" summary="step2">
+      <option name="closed" value="true" />
+      <created>1752436908402</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752436908402</updated>
+    </task>
+    <task id="LOCAL-00003" summary="step3">
+      <option name="closed" value="true" />
+      <created>1752696009601</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752696009602</updated>
+    </task>
+    <task id="LOCAL-00004" summary="step3">
+      <option name="closed" value="true" />
+      <created>1752696019214</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752696019214</updated>
+    </task>
+    <task id="LOCAL-00005" summary="step5">
+      <option name="closed" value="true" />
+      <created>1753037978199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753037978199</updated>
+    </task>
+    <task id="LOCAL-00006" summary="step5">
+      <option name="closed" value="true" />
+      <created>1753040123480</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753040123480</updated>
+    </task>
+    <task id="LOCAL-00007" summary="step5">
+      <option name="closed" value="true" />
+      <created>1753044861813</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753044861813</updated>
+    </task>
+    <task id="LOCAL-00008" summary="finaly">
+      <option name="closed" value="true" />
+      <created>1753120853742</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753120853742</updated>
+    </task>
+    <task id="LOCAL-00009" summary="finaly">
+      <option name="closed" value="true" />
+      <created>1753122405579</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1753122405579</updated>
+    </task>
+    <task id="LOCAL-00010" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753122894401</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1753122894401</updated>
+    </task>
+    <task id="LOCAL-00011" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753123061911</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1753123061911</updated>
+    </task>
+    <task id="LOCAL-00012" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753123437359</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1753123437359</updated>
+    </task>
+    <task id="LOCAL-00013" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753123795665</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1753123795665</updated>
+    </task>
+    <task id="LOCAL-00014" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753125108160</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1753125108160</updated>
+    </task>
+    <task id="LOCAL-00015" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753126467143</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1753126467143</updated>
+    </task>
+    <task id="LOCAL-00016" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753126778909</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1753126778909</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="step1" />
+    <MESSAGE value="step2" />
+    <MESSAGE value="step3" />
+    <MESSAGE value="step5" />
+    <MESSAGE value="finaly" />
+    <MESSAGE value="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile" />
+  </component>
+</project>

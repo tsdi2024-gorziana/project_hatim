@@ -1,0 +1,268 @@
+{% extends 'dechbords/../components/base.html' %}
+{% load static %}
+{% block titel %}
+    formater dachbord
+{% endblock titel %}
+{% block content %}
+    <div class="main-container">
+        <div class="pd-20 card-box mb-30">
+            <div class="clearfix">
+                <div class="pull-left">
+                <h4 class="h4 text-blue">
+                    <strong>Reference {{ module.referance_uf }}</strong> : {{ module.titer_module }}
+                </h4>
+                <p class="pd-20">{{ module.titer_module_pransipale }} - {{ module.heraire_totale }} heur </p>
+                <h3>Sequences:</h3>
+                </div>
+                <div class="pull-right">
+                    <a href="#" class="btn btn-primary btn-sm scroll-click" data-toggle="modal" data-target="#efcfform" type="button">generate EFCF </a>
+                </div>
+            </div>
+
+            <div class="row">
+                {% for seq in sequences %}
+                    <div class="col-md-4 mb-30">
+                        <div class="card-box pricing-card-style2">
+                            <div class="pricing-card-header">
+                                <div class="left">
+                                    <h5>{{ seq.titer_sequence }}</h5>
+                                    <p>{{ seq.objectif_sequence }}</p>
+                                </div>
+                                <div class="right">
+                                    <div class="pricing-price">
+                                        {{ seq.total_hores }} H
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-card-body">
+                                <div class="pricing-points">
+                                    <ul>
+                                        {% for a_chap in chapitres %}
+                                            {% if a_chap.sequenses.id == seq.id %}
+                                                <li><strong>{{ a_chap.order }}. </strong>{{ a_chap.titre }}</li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <!-- Modal EFCF Form -->
+            <div class="modal fade bs-example-modal-lg" id="efcfform" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myLargeModalLabel">EFCF FORM</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <form method="POST" action="{% url 'generate' %}" id="generateForm">
+                            {% csrf_token %}
+                            <input type="hidden" name="affectation_id" value="{{ affectation.id }}">
+                            <input type="hidden" name="module_id" value="{{ module.id }}">
+                            <div class="modal-body">
+                                <div class="tab">
+                                    <ul class="nav nav-pills" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active text-blue" data-toggle="tab" href="#home5" role="tab" aria-selected="true">Contrôle Informations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-blue" data-toggle="tab" href="#Criteres" role="tab" aria-selected="false">Critères</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-blue" data-toggle="tab" href="#objectifs" role="tab" aria-selected="false">Objectifs</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="home5" role="tabpanel">
+                                            <div class="pd-20">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">
+                                                            <label class="weight-600">Type de contrôle</label>
+                                                            <div class="custom-control custom-radio mb-5">
+                                                                <input type="radio" id="cc" name="controle_type" class="custom-control-input" value="cc" required>
+                                                                <label class="custom-control-label" for="cc">Contrôle Continu (CC)</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio mb-5">
+                                                                <input type="radio" id="efcf" name="controle_type" class="custom-control-input" value="efcf" required>
+                                                                <label class="custom-control-label" for="efcf">Contrôle Final (EFCF)</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-12">
+                                                            <label class="weight-600">Mode de contrôle</label>
+                                                            <div class="custom-control custom-radio mb-5">
+                                                                <input type="radio" id="th" name="controle_mode" class="custom-control-input" value="th" required>
+                                                                <label class="custom-control-label" for="th">Théorique</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio mb-5">
+                                                                <input type="radio" id="pr" name="controle_mode" class="custom-control-input" value="pr" required>
+                                                                <label class="custom-control-label" for="pr">Pratique</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3 ">
+                                                            <label>Numéro de contrôle</label>
+                                                            <input class="form-control" type="number" name="nemuro_controle" required>
+                                                        </div>
+                                                        <div class="col-md-3 ">
+                                                            <label>Durée du contrôle</label>
+                                                            <input class="form-control" type="number" name="dure_ducontrole" placeholder="minutes" required>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <label>Date de contrôle</label>
+                                                            <input class="form-control" type="date" name="date_ducontrole" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">
+                                                            <label class="weight-600">nomber des sequenses</label>
+                                                            {% for sequence in sequences %}
+                                                            	<div class="custom-control custom-checkbox mb-5">
+                                                                <input type="checkbox" class="custom-control-input" id="sequence_{{ sequence.id }}" value="{{ sequence.id }}" name="sequences[]">
+                                                                <label class="custom-control-label" for="sequence_{{ sequence.id }}">
+                                                                    {{ sequence.titer_sequence }}
+                                                                </label>
+                                                            </div>
+                                                            {% endfor %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="Criteres" role="tabpanel">
+                                            <div class="pd-20">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">
+                                                            <label class="weight-600">Critères d'appréciation des résultats et pondération</label>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-12">
+                                                            <div class="d-flex mb-3">
+                                                                <input type="number" id="criteriaCount" class="form-control col-md-3 mr-2" min="1" placeholder="Nombre des critères">
+                                                                <button type="button" class="btn btn-primary" onclick="generateCriteriaInputs()">Start</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Les champs dynamiques s'affichent ici -->
+                                                    <div id="criteriaContainer"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="objectifs" role="tabpanel">
+                                            <div class="pd-20">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-12">
+                                                            <label class="weight-600">Explication des objectifs de l'épreuve d'évaluation</label>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-12">
+                                                            <div class="d-flex mb-3">
+                                                                <input type="number" id="objectifsCount" class="form-control col-md-3 mr-2" min="1" placeholder="Nombre des objectifs">
+                                                                <button type="button" class="btn btn-primary" onclick="generateObjectifsInputs()">Start</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Les champs dynamiques s'affichent ici -->
+                                                    <div id="objectifsContainer"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Générer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include "components/footer.html" %}
+    </div>
+
+    <script>
+    // Validation JavaScript supplémentaire
+    document.getElementById('generateForm').addEventListener('submit', function(e) {
+        const typeSelected = document.querySelector('input[name="controle_type"]:checked');
+        const modeSelected = document.querySelector('input[name="controle_mode"]:checked');
+
+        if (!typeSelected || !modeSelected) {
+            e.preventDefault();
+            alert('Veuillez sélectionner un type ET un mode de contrôle');
+        }
+    });
+
+    function generateCriteriaInputs() {
+        const count = parseInt(document.getElementById("criteriaCount").value);
+        const container = document.getElementById("criteriaContainer");
+        container.innerHTML = "";
+
+        if (isNaN(count) || count <= 0) {
+            alert("Veuillez entrer un nombre valide.");
+            return;
+        }
+
+        for (let i = 1; i <= count; i++) {
+            const row = document.createElement("div");
+            row.classList.add("row", "mb-2");
+
+            row.innerHTML = `
+                <div class="col-md-6">
+                    <input type="text" name="critere[]" class="form-control" placeholder="Nom du critère ${i}" required>
+                </div>
+                <div class="col-md-4">
+                    <input type="number" name="pourcentage[]" class="form-control" placeholder="Pourcentage %" min="0" max="100" required>
+                </div>
+            `;
+
+            container.appendChild(row);
+        }
+
+        // Champ caché يحتوي عدد الكريتيريات
+        const totalInput = document.createElement("input");
+        totalInput.type = "hidden";
+        totalInput.name = "criteria_total";
+        totalInput.value = count;
+        container.appendChild(totalInput);
+    }
+
+    function generateObjectifsInputs() {
+        const count = parseInt(document.getElementById("objectifsCount").value);
+        const container = document.getElementById("objectifsContainer");
+        container.innerHTML = "";
+
+        if (isNaN(count) || count <= 0) {
+            alert("Veuillez entrer un nombre valide.");
+            return;
+        }
+
+        for (let i = 1; i <= count; i++) {
+            const row = document.createElement("div");
+            row.classList.add("row", "mb-2");
+
+            row.innerHTML = `
+                <div class="col-md-12">
+                    <input type="text" name="objectifs[]" class="form-control" placeholder="Objectif ${i}" required>
+                </div>
+            `;
+
+            container.appendChild(row);
+        }
+
+        // Champ caché يحتوي عدد الأهداف
+        const totalInput = document.createElement("input");
+        totalInput.type = "hidden";
+        totalInput.name = "objectifs_total";
+        totalInput.value = count;
+        container.appendChild(totalInput);
+    }
+    </script>
+{% endblock %}
