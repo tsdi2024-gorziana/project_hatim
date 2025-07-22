@@ -4,32 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31442826-a6e7-42af-8f24-818141bb2a43" name="Changes" comment="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_16VaKdW.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_8pRDyDk.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_CwmxSo7.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_GKAChw6.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_UCLeocm.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_ZMfuF03.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_crZy2ow.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_vBI3a5r.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fiche.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_fiche.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsgi_france_fiche.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/files/hatime/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/users/defult_prophile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/users/hatime/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/render.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="31442826-a6e7-42af-8f24-818141bb2a43" name="Changes" comment="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -56,6 +41,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {}
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:tsdi2024-gorziana/project_hatim-.git",
+    "accountId": "1f721f9f-d742-4116-8491-abd3a071f8dd"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -157,7 +151,7 @@
       <workItem from="1753020772741" duration="15714000" />
       <workItem from="1753120019192" duration="9141000" />
       <workItem from="1753171525402" duration="2225000" />
-      <workItem from="1753175999986" duration="1907000" />
+      <workItem from="1753175999986" duration="2238000" />
     </task>
     <task id="LOCAL-00001" summary="step1">
       <option name="closed" value="true" />
@@ -287,7 +281,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753126778909</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753214411103</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1753214411103</updated>
+    </task>
+    <task id="LOCAL-00018" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753214420805</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1753214420805</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +308,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
