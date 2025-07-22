@@ -4,3 +4,4 @@ echo "db.sqlite3" >> .gitignore
 echo "env/" >> .gitignore
 echo "staticfiles/" >> .gitignore
 echo ".env" >> .gitignore
+echo ".idea" >> .gitignore
