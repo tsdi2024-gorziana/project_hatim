@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31442826-a6e7-42af-8f24-818141bb2a43" name="Changes" comment="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile" />
+    <list default="true" id="31442826-a6e7-42af-8f24-818141bb2a43" name="Changes" comment="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_16VaKdW.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_8pRDyDk.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_CwmxSo7.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_GKAChw6.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_UCLeocm.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_ZMfuF03.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_crZy2ow.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fic_vBI3a5r.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_Recherche_Opérationnelle_et_veille_Technologique_fiche.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsdi_fiche.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/files/hatim_amri_tsgi_france_fiche.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/files/hatime/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/users/defult_prophile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/users/hatime/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/render.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,29 +67,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.project_hatim.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/abdelali/PycharmProjects/project_hatim/static/vendors/scripts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.project_hatim.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/abdelali/PycharmProjects/project_hatim/static/vendors/scripts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\abdelali\PycharmProjects\project_hatim\static\vendors\scripts" />
@@ -134,7 +155,9 @@
       <workItem from="1752769035309" duration="454000" />
       <workItem from="1752855182691" duration="22371000" />
       <workItem from="1753020772741" duration="15714000" />
-      <workItem from="1753120019192" duration="7193000" />
+      <workItem from="1753120019192" duration="9141000" />
+      <workItem from="1753171525402" duration="2225000" />
+      <workItem from="1753175999986" duration="1907000" />
     </task>
     <task id="LOCAL-00001" summary="step1">
       <option name="closed" value="true" />
