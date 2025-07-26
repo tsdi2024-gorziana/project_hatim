@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31442826-a6e7-42af-8f24-818141bb2a43" name="Changes" comment="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile" />
+    <list default="true" id="31442826-a6e7-42af-8f24-818141bb2a43" name="Changes" comment="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,15 +43,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {}
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:tsdi2024-gorziana/project_hatim-.git",
-    "accountId": "1f721f9f-d742-4116-8491-abd3a071f8dd"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tsdi2024-gorziana/project_hatim.git&quot;,
+    &quot;accountId&quot;: &quot;1f721f9f-d742-4116-8491-abd3a071f8dd&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -152,6 +154,9 @@
       <workItem from="1753120019192" duration="9141000" />
       <workItem from="1753171525402" duration="2225000" />
       <workItem from="1753175999986" duration="2238000" />
+      <workItem from="1753214675257" duration="2905000" />
+      <workItem from="1753259377565" duration="798000" />
+      <workItem from="1753260876068" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="step1">
       <option name="closed" value="true" />
@@ -297,7 +302,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753214420805</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753214754120</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1753214754120</updated>
+    </task>
+    <task id="LOCAL-00020" summary="finaly2&#10;&#10;# Conflicts:&#10;#&#9;Dockerfile">
+      <option name="closed" value="true" />
+      <created>1753214860085</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1753214860085</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

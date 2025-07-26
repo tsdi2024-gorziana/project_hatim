@@ -12,4 +12,4 @@ class FilieresAdmin(admin.ModelAdmin):
     list_display = ('title', 'academic_year')
     list_filter = ('academic_year',)
     search_fields = ('title',)
-    filter_horizontal = ('formateurs',)  # هنا كتستعمل filter_horizontal على many-to-many field
+    filter_horizontal = ("formateurs",)

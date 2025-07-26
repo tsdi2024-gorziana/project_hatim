@@ -29,9 +29,7 @@ class Seaquesnces_modules(models.Model):
 
 class Chapitres_sequenses(models.Model):
     titre = models.CharField("Titre", max_length=255)
-    description = models.TextField("Description")
     order = models.PositiveIntegerField("Ordre", default=0)
-    duree = models.PositiveIntegerField("Durée (min)", default=0)
     sequenses = models.ForeignKey(Seaquesnces_modules, on_delete=models.CASCADE, related_name='chapitres', verbose_name="Séquence")
 
     class Meta:
