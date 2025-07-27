@@ -65,7 +65,7 @@ class SequencesModulesAdmin(admin.ModelAdmin):
 # Register Chapitres_sequenses
 @admin.register(Chapitres_sequenses)
 class ChapitresSequencesAdmin(admin.ModelAdmin):
-    list_display = ('titre', 'sequenses', 'order', 'duree')
+    list_display = ('titre', 'sequenses', 'order')
     list_filter = ('sequenses', )
     ordering = ('sequenses', 'order')
     search_fields = ('titre', 'description')
